@@ -1,0 +1,32 @@
+---
+title: 'Lab 10: Song Lyrics'
+author: "Sophia Leiker"
+date: "3/10/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(purrr)
+```
+
+
+## Quick and ditry webscrape
+```{r}
+panic_lyrics <- read_html("http://www.songlyrics.com/panic!-at-the-disco/i-write-sins-not-tragedies-lyrics/") %>% 
+  html_nodes("#songLyricsDiv") %>% 
+  html_text()
+```
+
+
+
+
+
+
+
