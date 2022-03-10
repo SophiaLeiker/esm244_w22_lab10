@@ -5,13 +5,20 @@ date: "3/10/2022"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE,warning = FALSE,message = FALSE,cache=TRUE)
+```{r setup, include=TRUE, warning = FALSE, message = FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 
+library(sf)
+library(raster)
+library(rnaturalearth)
 library(tidyverse)
-library(tidytext)
-library(rvest)
-library(cowplot)
-library(ggwordcloud)
+library(jsonlite)
+library(here)
 
 ```
+
+```{r}
+api_key <- Sys.getenv("IUCN_KEY")
+```
+
+
