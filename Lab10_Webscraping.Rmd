@@ -1,0 +1,17 @@
+---
+title: 'Lab 10: Webscraping'
+author: "Sophia Leiker"
+date: "3/10/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning = FALSE,message = FALSE,cache=TRUE)
+
+library(tidyverse)
+library(tidytext)
+library(rvest)
+library(cowplot)
+library(ggwordcloud)
+
+```
